@@ -8,8 +8,6 @@ on:
       - master
       - next
       - main
-      - "0.*"
-      - "1.*"
   pull_request:
 
 env:
