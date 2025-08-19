@@ -71,12 +71,6 @@ type volumeInfo struct {
 	volumeType   string
 }
 
-type perfDataCounterValues struct {
-	Name             string
-	FreeSpace        float64 `pdh:"Free Megabytes"`
-	PercentFreeSpace float64 `pdh:"% Free Space_Base"`
-}
-
 func New(config *Config) *Collector {
 	if config == nil {
 		config = &ConfigDefaults
